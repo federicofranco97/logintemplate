@@ -6,11 +6,30 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Register Sheet</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="resources/styleRegister.css">
     </head>
     <body>
-        <div>TODO write content</div>
+        <form id="registerForm">
+            <div class="formBlock">
+                <label>Nombre de Usuario</label><br>
+                <input class="sideInput"  type="text" placeholder="Ingrese nombre">
+            </div>
+            <div class="formBlock">
+                <label>Fecha de Nacimiento</label><br>
+                <input class="sideInput"  type="date" style="width: 166px">
+            </div>
+            <div class="formBlock">
+                <label>Contraseña</label><br>
+                <input class="sideInput" type="password" placeholder="Ingrese clave">
+            </div>  
+            <div class="formBlock" style="margin-top: 4%;">                
+                <input class="sideInput" type="button" value="Register" style="padding: 6px;width: 80px;margin-left: 2%">
+                <input class="sideInput" type="reset" value="Restore" style="padding: 6px;width: 80px">
+                
+            </div>   
+        </form>
     </body>
 </html>

@@ -1,0 +1,21 @@
+body
+{
+    background-color: #60a3bc;
+    font-family: Verdana;
+}
+
+#registerForm
+{
+    margin-left: 43%;
+    margin-top: 10%;
+    border: 2px solid #c0392b;
+    width: 200px;
+    height: 200px;
+    padding: 15px 5px 15px 25px;
+}
+
+.sideInput
+{
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;    
+}
