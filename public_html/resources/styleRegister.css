@@ -9,7 +9,7 @@ body
     margin-left: 40%;
     margin-top: 5%;
     border: 2px solid #c0392b;
-    width: 18.2%;
+    width: 18.5%;
     height: 300px;
     padding: 65px 5px 2px 65px;
     background-color: #f39c12;  
@@ -38,5 +38,5 @@ body
 .sideInput
 {
     margin-top: 1.5%;
-    margin-bottom: 1.5%;    
+    margin-bottom: 1.5%;
 }
