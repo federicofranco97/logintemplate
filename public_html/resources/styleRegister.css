@@ -9,7 +9,7 @@ body
     margin-left: 40%;
     margin-top: 5%;
     border: 2px solid #c0392b;
-    width: 250px;
+    width: 18.2%;
     height: 300px;
     padding: 65px 5px 2px 65px;
     background-color: #f39c12;  
@@ -17,6 +17,13 @@ body
     border-bottom-right-radius: 25px;
     font-size: 15px;
     
+}
+
+.boxth
+{
+    background-color: #c0392b;
+    height: 2%;
+    width: 3%;
 }
 
 #pinLogo
